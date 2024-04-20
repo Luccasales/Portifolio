@@ -1,0 +1,269 @@
+/* ESTILIZAÇÃO GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    background-color: #000;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin:0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color:#00FF08 ;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 200ms;
+   }
+   
+h2.titulo{
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+   }
+
+button:hover{
+    box-shadow: 0px 0px 8px #00ff08;
+    transform: scale(1.05);
+}
+
+
+/* ESTILO DO CABEÇALHO */
+
+header{
+    padding:40px 4%;
+    
+}
+
+
+
+header>.interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #969595;
+    text-decoration: none;
+    display: inline-block;
+    transition: 200ms;
+    
+}
+
+header a:hover{
+    color:#fff;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav li{
+    display:inline-block;
+    padding: 0 40px;
+}
+
+
+
+
+
+/* ESTILO TOPO DO SITE */
+
+section .topo-do-site{
+    padding: 40px 4%;
+}
+
+section .topo-do-site .flex{
+align-items: center;
+justify-content: center;
+gap: 90px;
+}
+
+.topo-do-site h1{
+    color:#fff;
+    font-size: 38px;
+    line-height: 40px;
+
+}
+
+.topo-do-site .txt-topo-site p{
+    color:#fff;
+    margin: 60px 0;
+}
+
+.img-topo-site{
+    max-width:100%;
+    height: auto;
+    
+}
+
+/* ESTILO DAS ESPECIALIDADES */
+
+section .especialidades{
+    padding: 40px 4%;
+}
+
+section .especialidades .flex{
+    gap: 60px;
+}
+
+.especialidades .especialidades-box{
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 20px;
+    transition: 200ms;
+}
+
+.especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #ffffff8f;
+}
+
+.especialidades .especialidades-box i{
+    font-size: 70px;
+    color: #00FF08;
+}
+
+.especialidades .especialidades-box h3{
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+/* ESTILIZAÇÃO DO SOBRE */
+
+section.sobre{
+    padding: 80px 4%;
+}
+
+.sobre .txt-sobre{
+    color: #fff;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 38px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre p{
+    margin: 20px 0;
+    text-align:justify;
+    font-size: 20px;
+}
+
+.sobre .txt-sobre .btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #00FF08;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 8px;
+    transition: 200ms;
+}
+
+/* ESTILO DO PORTIFOLIO */
+section.portifolio{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff16;
+}
+
+section.portifolio .flex{
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 800ms;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-port:hover{
+    background-position: 100% 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000af;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: 500ms;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+/* ESTILIZAÇÃO DO FORMULARIO DE CONTATO */
+
+section.formulario{
+    padding: 80px 4%;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #292929a7;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+
+form textarea{
+    resize: none;
+    max-height:200px ;
+}
+
+form .btn-enviar{
+    margin-top: 20px;
+}
+
+form .btn-enviar input{
+    cursor: pointer;
+}
