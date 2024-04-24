@@ -46,8 +46,7 @@ button:hover{
 /* ESTILO DO CABEÇALHO */
 
 header{
-    padding:40px 4%;
-    
+    padding:40px 4%;   
 }
 
 
@@ -86,8 +85,11 @@ header nav li{
 
 /* ESTILO TOPO DO SITE */
 
+
+
 section .topo-do-site{
     padding: 40px 4%;
+    
 }
 
 section .topo-do-site .flex{
@@ -114,6 +116,9 @@ gap: 90px;
     
 }
 
+.txt-topo-site, .img-topo-site{
+    margin-top: 300px;
+}
 /* ESTILO DAS ESPECIALIDADES */
 
 section .especialidades{
